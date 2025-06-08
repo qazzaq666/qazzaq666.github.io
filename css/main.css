@@ -1,0 +1,107 @@
+body {
+  font-family: "Source Code Pro", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Темно-серый фон страницы */
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Черный фон с прозрачностью 90% */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.table {
+  border: 1px solid white; /* Рамка вокруг таблички */
+  width: 330px; /* Уменьшенная ширина */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 0; /* Прямые углы */
+  background-color: transparent; /* Без заливки */
+}
+
+.table p {
+  font-size: 20px; /* Уменьшенный размер шрифта */
+  margin: 0;
+  text-align: left; /* Выравнивание по левому краю */
+  color: white; /* Белый цвет текста */
+  padding: 7px; /* Отступ со всех сторон */
+  box-sizing: border-box;
+  line-height: 1.2;
+  width: calc(100% - 14px); /* Ширина текста с учетом отступов */
+  word-wrap: break-word; /* Перенос слов */
+}
+
+.em {
+  color: white;
+  font-size: 40px;
+  font-weight: 200; /* Extralight */
+  margin: 0 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Выравнивание по центру */
+  margin-top: 160px; /* Отступ для фиксированного хедера */
+  padding: 20px;
+}
+
+.kasane-image {
+  width: 760px;
+  height: 560px;
+  margin-top: 80px; /* Расстояние от хедера */
+  display: block;
+  object-fit: contain; /* Сохранение пропорций */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.literally-me {
+  font-size: 40px;
+  font-weight: 400; /* Regular */
+  margin-top: 16px; /* Расстояние от картинки */
+  text-align: center;
+}
+
+.hello-text {
+  font-size: 20px;
+  font-weight: 400; /* Regular */
+  margin-top: 410px; /* Расстояние от текста "Literally me" + 100px */
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5); /* Белый с прозрачностью 50% */
+}
+
+footer {
+  margin-top: 610px; /* Расстояние от текста "Hello, is anyone there?" - 100px */
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
