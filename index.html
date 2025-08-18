@@ -9,28 +9,81 @@
     />
     <link href="./css/main.css" rel="stylesheet" />
     <title>EM</title>
+    <style>
+      .start-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #121212;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+      .start-screen h1 {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div class="table">
-        <p>The name of this site is under construction...</p>
-      </div>
-      <div class="em">
-        <span>EM</span>
-      </div>
-    </header>
-    <main>
-      <a
-        href="https://youtu.be/kuNixp-wvWM?si=dzMo2SXwxvi-CydS"
-        target="_blank"
-      >
-        <img src="kasane.webp" alt="Kasane" class="kasane-image" />
-      </a>
-      <p class="literally-me">Literally me</p>
-      <p class="hello-text">Hello, is anyone there?</p>
-    </main>
-    <footer>
-      <p>© 2025 EM</p>
-    </footer>
+    
+    <div class="start-screen" id="start-screen">
+      <h1> </h1>
+      <button class="button" id="enter-btn">Enter</button>
+    </div>
+
+   
+    <audio id="bg-music" loop>
+      <source src="music.mp3" type="audio/mpeg" />
+      No audio
+    </audio>
+
+
+
+    <div id="site-content" style="display: none;">
+      <header>
+        <div class="table">
+          <p>The name of this site is under construction...</p>
+        </div>
+        <div class="em">
+          <span>EM</span>
+        </div>
+      </header>
+      <main>
+        <a
+          href="https://youtu.be/kuNixp-wvWM?si=dzMo2SXwxvi-CydS"
+          target="_blank"
+        >
+          <img src="kasane.webp" alt="Kasane" class="kasane-image" />
+        </a>
+        <p class="literally-me">Literally me</p>
+        <p class="hello-text">Hello, is anyone there?</p>
+      </main>
+      <footer>
+        <p>© 2025 EM</p>
+      </footer>
+    </div>
+
+	<script>
+	const enterBtn = document.getElementById("enter-btn");
+	const startScreen = document.getElementById("start-screen");
+	const siteContent = document.getElementById("site-content");
+	const bgMusic = document.getElementById("bg-music");
+
+	enterBtn.addEventListener("click", () => {
+    startScreen.style.display = "none";
+    siteContent.style.display = "block";
+    bgMusic.volume = 0.1; 
+    bgMusic.play();
+	});
+	</script>
+
+
+  
   </body>
 </html>
