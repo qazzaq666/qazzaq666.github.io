@@ -63,16 +63,6 @@ body.pre-entry footer {
   display: none;
 }
 
-#youtubeMusicPlayer {
-  position: fixed;
-  width: 220px;
-  height: 220px;
-  left: -9999px;
-  top: -9999px;
-  opacity: 0;
-  pointer-events: none;
-}
-
 header {
   position: fixed;
   top: 0;

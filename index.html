@@ -55,10 +55,12 @@
       </section>
     </main>
     <footer class="page-footer">
-      <p>© 2026 EM <a href="./old/">[old version]</a></p>
+      <span class="footer-year">© 2026 EM</span>
+      <a href="./old/" class="footer-old-link">[old version]</a>
     </footer>
-    <div id="youtubeMusicPlayer" aria-hidden="true"></div>
-    <script src="https://www.youtube.com/iframe_api"></script>
+    <audio id="bgMusic" preload="auto" loop>
+      <source src="./music.mp3" type="audio/mpeg" />
+    </audio>
     <script src="./script.js"></script>
   </body>
 </html>
