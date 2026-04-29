@@ -1,0 +1,176 @@
+body {
+  font-family: "Source Code Pro", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: white;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+body.pre-entry header,
+body.pre-entry main,
+body.pre-entry footer {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.entry-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.98);
+}
+
+.entry-panel {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(12, 12, 12, 0.96);
+  padding: 24px;
+  width: min(460px, calc(100% - 32px));
+  text-align: center;
+}
+
+.entry-title {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 200;
+}
+
+.entry-text {
+  margin: 14px 0 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.entry-button {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  padding: 10px 16px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.entry-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.entry-gate.hidden {
+  display: none;
+}
+
+#youtubeMusicPlayer {
+  position: fixed;
+  width: 220px;
+  height: 220px;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.table {
+  border: 1px solid white;
+  width: 330px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.table p {
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+  color: white;
+  padding: 7px;
+  box-sizing: border-box;
+  line-height: 1.2;
+  width: calc(100% - 14px);
+  word-wrap: break-word;
+}
+
+.em {
+  color: white;
+  font-size: 40px;
+  font-weight: 200;
+  margin: 0 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160px;
+  padding: 20px;
+}
+
+.kasane-image {
+  width: 760px;
+  height: 560px;
+  margin-top: 80px;
+  display: block;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.literally-me {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.hello-text {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 410px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer {
+  margin-top: 610px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
